@@ -1,3 +1,34 @@
+/*****
+GENERAL
+*****/
+
+.container {
+  position: absolute;
+  width: calc(100% - 300px);
+  top: 20px;
+  right: 40px;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #4c4c4c;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background-color: #4c4c4c;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/*****
+NAV
+*****/
+
 .nav {
   position: fixed;
   width: 180px;
@@ -43,12 +74,10 @@
   margin: 0 auto;
 }
 
-.photo-grid {
-  position: absolute;
-  width: calc(100% - 300px);
-  top: 20px;
-  right: 40px;
-}
+
+/*****
+PHOTO GRID
+*****/
 
 .photo-grid img {
   object-fit: cover;
@@ -67,10 +96,45 @@
     display: block;
   }
 
-  .photo-grid {
+  .container {
     width: 100%;
     top: 60px;
-    right: 10px;
+    right: inherit;
   }
 
+}
+
+/*****
+CONTACT
+*****/
+
+input, textarea {
+  outline: none;
+}
+
+.checkout-form {
+    top: 100px;
+}
+
+.field-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.field-input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  padding: 4px 10px;
+  margin: 0 15px;
+}
+
+.field-line textarea {
+  height: 90px;
+  padding-top: 10px;
+}
+
+.confirm-contact {
+  text-align: center;
 }

@@ -5,7 +5,6 @@ import logo from '../logo.png'
 
 class Nav extends Component {
 
-
     render() {
         const portraitsClass = location.pathname === "/" ? "active" : ""
         const eventsClass = location.pathname.match(/^\/events/) ? "active" : ""
@@ -25,7 +24,7 @@ class Nav extends Component {
                     <div className="nav-logo"><img src={ logo } alt="Quentin Dufour - Photographe" /></div>
                 </nav>
             </div>
-        );
+        )
     }
 }
 

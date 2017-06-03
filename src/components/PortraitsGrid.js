@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Responsive, WidthProvider } from 'react-grid-layout'
 
-const ResponsiveReactGridLayout = WidthProvider(Responsive);
+const ResponsiveReactGridLayout = WidthProvider(Responsive)
 
 class PortraitsGrid extends Component {
 
@@ -30,7 +30,7 @@ class PortraitsGrid extends Component {
         }
 
         return(
-          <ResponsiveReactGridLayout className="photo-grid" breakpoints={{lg: 768, md: 480}} cols={{lg: 12, md: 6}} rowHeight={120} layouts={layouts}>
+          <ResponsiveReactGridLayout className="container photo-grid" breakpoints={{lg: 768, md: 480}} cols={{lg: 12, md: 6}} rowHeight={120} layouts={layouts}>
               <div key={'a'}><img src={ require('../img/portraits/portrait_01.jpg') } alt="Test" /></div>
               <div key={'b'}><img src={ require('../img/portraits/portrait_02.jpg') } alt="Test" /></div>
               <div key={'c'}><img src={ require('../img/portraits/portrait_03.jpg') } alt="Test" /></div>
